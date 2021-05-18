@@ -1,0 +1,10 @@
+#greeting{
+	font-family: "Courier New";
+	font-weight: 900;
+	font-size: xx-large;
+}
+#socials input{
+	height: 50px;
+	width: 50px;
+	margin: 20px;
+}
