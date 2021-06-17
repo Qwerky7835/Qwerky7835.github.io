@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Determination";
+  src: url("/fonts/DTM-Sans.otf") format("opentype");
+}
+
 #main_container{
 	background-color: black;
 }
@@ -6,9 +11,10 @@
 	border-color: white;
 }
 #greeting{
-	font-family: "Courier New";
-	font-weight: 900;
-	font-size: xx-large;
+	border: 5px solid white;
+	text-align: left;
+	font-family: "Determination";
+	color: white;
 }
 #socials input{
 	height: 50px;
