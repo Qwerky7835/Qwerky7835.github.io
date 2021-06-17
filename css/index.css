@@ -1,3 +1,10 @@
+#main_container{
+	background-color: black;
+}
+
+#intro{
+	border-color: white;
+}
 #greeting{
 	font-family: "Courier New";
 	font-weight: 900;
