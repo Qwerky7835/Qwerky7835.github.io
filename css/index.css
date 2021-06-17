@@ -1,23 +1,22 @@
-@font-face {
-  font-family: "Determination";
-  src: url("/fonts/DTM-Sans.otf") format("opentype");
-}
-
 #main_container{
 	background-color: black;
 }
 
-#intro{
-	border-color: white;
+img[alt="Portrait"]{
+	height: 580px;
+	width: auto;
 }
+
 #greeting{
-	border: 5px solid white;
 	text-align: left;
-	font-family: "Determination";
+	border: 5px solid white;
+	font-family:"Press Start 2P";
+	font-size: 12px;
 	color: white;
 }
 #socials input{
 	height: 50px;
 	width: 50px;
 	margin: 20px;
+	margin-top: 150px;
 }
