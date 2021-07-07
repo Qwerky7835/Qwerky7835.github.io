@@ -1,0 +1,57 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+.dotmap{
+    width:960px;
+    overflow:hidden;
+    .rows{
+        &:after{
+            content:"";
+            display: table;
+            clear:both;
+        }
+    }
+}
+/*dot style*/
+.dot{
+    float:left;
+    display:inline-block;
+    border-radius:100%;
+    width:10px;
+    height:10px;
+    background:#ccc;
+    margin:2px;
+}
+
+/*colour groups*/
+.water{background:#C5EFF7;}
+.north-america{background:#90C695;}
+.south-america{background:#E26A6A;}
+.europe{background:#BE90D4;}
+.africa{background:#FDE3A7;}
+.asia{background:#F4B350;}
+.australia{background:#1E824C;}
+
+
+/*@keyframes water {
+  0%   { background: lightcyan; }
+  50% { background: paleturquoise; }
+  100%   { background: lightcyan; }
+}
+
+.water{
+    animation: water 1s infinite;
+}*/
+
+.map_container{
+    max-width: 960px
+}

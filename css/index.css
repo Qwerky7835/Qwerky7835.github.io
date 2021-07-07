@@ -2,10 +2,10 @@
 	background-color: black;
 }
 
-img[alt="Portrait"]{
+/*img[alt="Portrait"]{
 	height: 580px;
 	width: auto;
-}
+}*/
 
 #greeting{
 	text-align: left;
