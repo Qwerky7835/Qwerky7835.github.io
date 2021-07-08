@@ -55,3 +55,14 @@ html {
 .map_container{
     max-width: 960px
 }
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('../font/Minecraft.ttf') format("truetype");
+}
+
+.minecraft_text{
+    text-align: center;
+    font-family: minecraft;
+    font-weight:bold;
+}
