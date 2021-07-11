@@ -41,19 +41,9 @@ html {
 .asia{background:#F4B350;}
 .australia{background:#1E824C;}
 
-
-/*@keyframes water {
-  0%   { background: lightcyan; }
-  50% { background: paleturquoise; }
-  100%   { background: lightcyan; }
-}
-
-.water{
-    animation: water 1s infinite;
-}*/
-
 .map_container{
-    max-width: 960px
+    max-width: 960px;
+    background-color: white;
 }
 
 @font-face {
@@ -65,4 +55,26 @@ html {
     text-align: center;
     font-family: minecraft;
     font-weight:bold;
+}
+
+.minecraft_banner{
+    margin: 0;
+    padding: 0;
+    min-width: 960px;
+}
+
+@keyframes banner {
+  0%   { font-size: 150%; }
+  /*50% { font-size: 175%; }*/
+  100%   { font-size: 170%; }
+}
+
+#banner{
+    font-size:150%;
+    /*animation: banner 0.75s infinite;*/
+}
+
+#map_row{
+    background-color:#D3BF99;
+    min-width: 960px
 }
