@@ -40,6 +40,16 @@ html {
 .africa{background:#FDE3A7;}
 .asia{background:#F4B350;}
 .australia{background:#1E824C;}
+.selectable{background:black;}
+
+/*Current selectables are:
+r16d54 - China
+r31d37 - South Africa
+r17d18 - US
+r13d32 - UK
+r15d33 - Paris
+r19d42 - Dubai/Middle East
+*/
 
 .map_container{
     max-width: 960px;
@@ -58,7 +68,7 @@ html {
 }
 
 .minecraft_banner{
-    margin: 0;
+    margin: 20px 0px 0px 0px;
     padding: 0;
     min-width: 960px;
 }
