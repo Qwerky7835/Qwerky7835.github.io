@@ -12,50 +12,75 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<div class="container-fluid">
-			<div class="collapse navbar-collapse">
-    			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        			<li class="nav-item">
-        				<a class="nav-link active" aria-current="page" href="#">Home</a>
-        			</li>
-        			<li class="nav-item">
-        				<a class="nav-link" href="html/map.html">Map</a>
-        			</li>
-        			<!-- <li class="nav-item">
-        				<a class="nav-link" href="#">Blog</a>
-        			</li> -->
-<!--         			<li class="nav-item">
-        				<a class="nav-link" href="#">Contact</a>
-        			</li> -->
-    			</ul>
-    		</div>
-  		</div>
-	</nav>
-	<div class="container-fluid" height="100%" id="main_container">
-		<div class="row">
-			<div class="col-sm-5">
-				<img src="img/Dong_Tianchan.jpg" alt="Portrait" class="img-fluid">
+	<div class="container-fluid" id="main_container">
+  		<div class="row">
+			<!-- Image column -->
+			<div class="col-sm-auto align-items-center vh-100">
+				<img src="img/Dong_Tianchan.jpg" alt="Portrait">
 			</div>
-			<div class="col-sm-7 text-center align-middle my-auto">
-				<div class="row justify-content-md-center">
-					<div class="col-sm-auto">
-						<img src="./img/Flowey.gif">
-					</div>
-					<div id="greeting" class="col-sm-auto">
-						<p>* Howdy!<br><br>
-							* I'm TC<br><br>
-							* Sales Engineer and Community Builder
-						</p>
-					</div>
+			<!-- Navbar/content column -->
+			<div class="col-sm d-flex flex-column vh-100">
+				<!-- Scalable Padding -->
+				<div class="row container-fluid" id="paddingRow"></div>
+				<div class="row container-fluid">
+					<nav class="navbar navbar-expand-lg navbar-dark">
+						<div class="container-fluid d-flex">
+
+							<!-- Collapsible content -->
+							<div class="collapse navbar-collapse" id="CollapseContent">
+							<ul class="navbar-custom navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+								<li class="nav-item">
+								<a class="nav-link active" href="index.html">Home</a>
+								</li>
+								<li class="nav-item">
+								<a class="nav-link" href="html/map.html">Map</a>
+								</li>
+								<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+								</li>
+							</ul>
+							</div>
+
+							<!-- Hamburger pushed right -->
+							<button class="navbar-toggler ms-auto" type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#CollapseContent"
+									aria-controls="CollapseContent"
+									aria-expanded="false"
+									aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							</button>
+						</div>
+					</nav>
 				</div>
-				<div id="socials">
-					<input type="image" src="./img/icon-Linkedin.png" onclick="window.open('https://www.linkedin.com/in/tcdong/')">
-					<input type="image" src="./img/icon-github.png" onclick="window.open('https://github.com/qwerky7835')">
-					<input type="image" src="./img/icon-CV.png" onclick="window.location.assign('./CV.pdf')">
+				<div class="row flex-grow-1 d-flex align-items-center justify-content-center">
+					<div class="row d-flex align-items-center">
+						<!-- Flowey Row -->
+						<div class="row container-fluid d-flex justify-content-center align-items-center gap-4">
+						<div class="col-sm-auto align-items-center">
+							<img src="./img/Flowey.gif" id="flowey">
+						</div>
+						<div id="greeting" class="col-sm-auto">
+							<p><br>
+								* Howdy! I'm TC.<br><br>
+								* Developer Advocate and Researcher.<br><br>
+								* Interested in Blockchain and AI.<br><br>
+								* I enjoy hiking, ice skating, and gaming.<br>
+							</p>
+						</div>
+					</div>
+					<!-- Socials -->
+					<div id="socials" class="d-flex justify-content-center gap-5 mx-auto">
+    					<input type="image" src="./img/icon-Linkedin.png"
+           					onclick="window.open('https://www.linkedin.com/in/tcdong/')">
+						<input type="image" src="./img/icon-github.png"
+							onclick="window.open('https://github.com/qwerky7835')">
+						<input type="image" src="./img/icon-CV.png"
+							onclick="window.location.assign('./CV.pdf')">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+  	</div>
 </body>
 </html>

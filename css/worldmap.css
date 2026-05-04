@@ -9,8 +9,16 @@ html {
     box-sizing: inherit;
 }
 
+body{
+    background-color: black;
+}
 
-.dotmap{
+.vh-6 {
+    height: 6vh;
+    background-color: black;
+}
+
+/* .dotmap{
     width:960px;
     overflow:hidden;
     .rows{
@@ -21,15 +29,56 @@ html {
         }
     }
 }
-/*dot style*/
+/*dot style
 .dot{
     float:left;
     display:inline-block;
     border-radius:100%;
-    width:10px;
-    height:10px;
+    width:7px;
+    height:7px;
     background:#ccc;
-    margin:2px;
+    margin:1px;
+} */
+
+/* =========================
+   DOTMAP CONTAINER
+   (controls ALL scaling)
+========================= */
+.dotmap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  /* pixel size scaling */
+  --tile: clamp(3px, 0.6vw, 10px);
+}
+
+/* =========================
+   ROWS (NO FLEX GROW!)
+   critical fix: prevents giant gaps
+========================= */
+.rows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+/* =========================
+   PIXEL DOTS
+========================= */
+.dot {
+  width: var(--tile);
+  height: var(--tile);
+
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  margin: 0.5px;
+
+  background: #ccc;
 }
 
 /*colour groups*/
@@ -51,9 +100,8 @@ r15d33 - Paris
 r19d42 - Dubai/Middle East
 */
 
-.map_container{
-    max-width: 960px;
-    background-color: white;
+#paddingRow{
+	height: 5%;
 }
 
 @font-face {
@@ -65,26 +113,58 @@ r19d42 - Dubai/Middle East
     text-align: center;
     font-family: minecraft;
     font-weight:bold;
+    font-size: 160%;
 }
 
-.minecraft_banner{
+/* .minecraft_banner{
     margin: 20px 0px 0px 0px;
     padding: 0;
     min-width: 960px;
-}
+} */
 
-@keyframes banner {
-  0%   { font-size: 150%; }
-  /*50% { font-size: 175%; }*/
-  100%   { font-size: 170%; }
+/* @keyframes banner {
+  0%  { font-size: 150%; }
+  50% { font-size: 175%; }
+  90% { font-size: 170%; }
+  100%{ font-size: 160%; }
 }
 
 #banner{
     font-size:150%;
-    /*animation: banner 0.75s infinite;*/
+    animation: banner 0.75s infinite;
+} */
+
+/* Custom navbar styling */
+
+.navbar-nav .nav-link{
+	color: #fff; /* white text */
+	transition: all 0.3s ease;
+	font-size: clamp(1rem, 1vw, 2rem);
+}
+
+/* Hover effect */
+.navbar-custom .nav-link:hover {
+	color: #0d6efd; /* Bootstrap blue */
+	transform: translateY(-2px);
+}
+
+/* Back button styling */
+.navbar-custom .btn {
+	color: #fff;
+	border-color: #fff;
 }
 
 #map_row{
-    background-color:#D3BF99;
-    min-width: 960px
+    background-image: url("../img/minecraft_map.svg");
+    background-size: 100% 100%;       /* scales image to height */
+    background-repeat: no-repeat; /* stops tiling */ 
+    background-position: center;  /* keeps it centered */
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 5vw;
+    min-width: 0;
+    min-height: 0;
 }
