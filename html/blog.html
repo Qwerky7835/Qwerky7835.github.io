@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tianchan Dong</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../css/blog.css">
+    <script src="../js/map.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<!-- NavBar -->
+	<nav class="row container-fluid navbar-expand-lg navbar-dark sticky-top px-5 pt-4">
+		<div class="container-fluid d-flex">
+			<!-- Collapsible content -->
+			<div class="collapse navbar-collapse" id="CollapseContent">
+			<ul class="navbar-custom navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/map.html">Map</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Blog</a>
+				</li>
+			</ul>
+			</div>
+
+			<!-- Hamburger pushed right -->
+			<button class="navbar-toggler ms-auto" type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#CollapseContent"
+				aria-controls="CollapseContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+
+	<!-- Quote -->
+	<div class="row py-5 justify-content-center">
+		<div class="col-8 quote">
+			"As Schopenhauer noted, the new idea is first denounced as the work of the insane, in a few years it is considered obvious and mundane, and finally the original denouncers will claim to have invented it"
+		</div>
+		<div class="col-8 attribution justify-content-end">
+			~ Alan Kay, A history of Smalltalk
+		</div>
+	</div>
+
+	<!-- Topics -->
+	<div class="row py-4 justify-content-center">
+		<div class="col-8">
+			<p class="blogTitles">Featured Articles</p>
+			<div class="row">
+				<div class="col-auto">
+					<a href="../blog/EU_AI_Act.html">
+						<img class="featuredCard" src="../img/EU_AI_Act_Portrait.png" alt="EU AI Act"">
+					</a>
+				</div>
+				<!-- Copy more articles according to above -->
+			</div>
+		</div>	
+	</div>
+
+	<!-- Topics -->
+	<div class="row justify-content-center">
+		<div class="col-8">
+			<p class="blogTitles">Browse by Topic</p>
+			<div class="accordion py-4">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							General Programming Concepts
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse">
+						<div class="accordion-body">
+							No articles yet.
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Artificial Intelligence
+					</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse">
+					<div class="accordion-body">
+						No articles yet.
+					</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Blockchain
+					</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse">
+					<div class="accordion-body">
+						No articles yet.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

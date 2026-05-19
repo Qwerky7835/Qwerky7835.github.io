@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'computer modern book';
+    src: url('../font/ComputerModern/NewCM10-Book.otf');
+}
+
+@font-face {
+    font-family: 'computer modern book italic';
+    src: url('../font/ComputerModern/NewCM10-BookItalic.otf');
+}
+
+@font-face {
+    font-family: 'computer modern book bold';
+    src: url('../font/ComputerModern/NewCM10-Bold.otf');
+}
+
+.title{
+    font-family: "computer modern book";
+    color: white;
+    font-size: 2rem;
+}
+
+.content{
+    font-family: "computer modern book";
+    color: white;
+}
+
+.quote{
+    font-family: "computer modern book italic";
+    color: white;
+    font-size: 1.25rem;
+}
+
+.attribution{
+    font-family: "computer modern book italic";
+    color: white;
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+/* Custom navbar styling */
+
+.navbar-nav .nav-link{
+	color: #fff; /* white text */
+	transition: all 0.3s ease;
+	font-size: clamp(1rem, 1vw, 2rem);
+}
+
+/* Hover effect */
+.navbar-custom .nav-link:hover {
+	color: #0d6efd; /* Bootstrap blue */
+	transform: translateY(-2px);
+}
+
+/* Back button styling */
+.navbar-custom .btn {
+	color: #fff;
+	border-color: #fff;
+}
+
+.blogTitles{
+    font-family: "computer modern book";
+    color: white;
+    font-size: 1.5rem;
+}
+
+.featuredCard{
+    height: 20vh;
+    min-height: 200px;
+    margin-right: 3em;
+    margin-bottom: 3em;
+}
+
+/* Accordion settings */
+.accordion-header{
+    border-color: white;
+    border-width: thin;
+}
+
+.accordion-button{
+    background-color: #5c665f;
+    font-family: "computer modern book bold";
+    font-size: 1.5rem;
+    color: white;
+    min-height: 75px;
+}
+
+.accordion-item{
+    border-color: white;
+    border-width: thin;
+    border-radius: 10px !important;
+    overflow: hidden; /* important so inner elements respect the rounding */
+    background-color: black;
+    color: white;
+    margin-bottom: 5vh;
+}

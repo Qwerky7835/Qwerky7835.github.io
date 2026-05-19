@@ -18,28 +18,6 @@ body{
     background-color: black;
 }
 
-/* .dotmap{
-    width:960px;
-    overflow:hidden;
-    .rows{
-        &:after{
-            content:"";
-            display: table;
-            clear:both;
-        }
-    }
-}
-/*dot style
-.dot{
-    float:left;
-    display:inline-block;
-    border-radius:100%;
-    width:7px;
-    height:7px;
-    background:#ccc;
-    margin:1px;
-} */
-
 /* =========================
    DOTMAP CONTAINER
    (controls ALL scaling)
@@ -116,13 +94,7 @@ r19d42 - Dubai/Middle East
     font-size: 160%;
 }
 
-/* .minecraft_banner{
-    margin: 20px 0px 0px 0px;
-    padding: 0;
-    min-width: 960px;
-} */
-
-/* @keyframes banner {
+@keyframes banner {
   0%  { font-size: 150%; }
   50% { font-size: 175%; }
   90% { font-size: 170%; }
@@ -130,9 +102,12 @@ r19d42 - Dubai/Middle East
 }
 
 #banner{
+    position: absolute;
     font-size:150%;
     animation: banner 0.75s infinite;
-} */
+    min-height: 50px;
+    text-align: center;
+}
 
 /* Custom navbar styling */
 
@@ -156,7 +131,7 @@ r19d42 - Dubai/Middle East
 
 #map_row{
     background-image: url("../img/minecraft_map.svg");
-    background-size: 100% 100%;       /* scales image to height */
+    background-size: 60% 100%;       /* scales image to height */
     background-repeat: no-repeat; /* stops tiling */ 
     background-position: center;  /* keeps it centered */
 
