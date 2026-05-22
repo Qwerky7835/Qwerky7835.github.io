@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alan Kay and the history of Objects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+	<nav class="row container-fluid navbar-expand-lg navbar-dark sticky-top px-5 pt-4">
+		<div class="container-fluid d-flex">
+			<!-- Collapsible content -->
+			<div class="collapse navbar-collapse" id="CollapseContent">
+			<ul class="navbar-custom navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+				<li class="nav-item">
+					<a class="nav-link active" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/map.html">Map</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../html/blog.html">Blog</a>
+				</li>
+			</ul>
+			</div>
+
+			<!-- Hamburger pushed right -->
+			<button class="navbar-toggler ms-auto" type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#CollapseContent"
+				aria-controls="CollapseContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="row pt-5 justify-content-center title">
+                Alan Kay and the history of Objects
+            </div>
+            <div class="row pt-5 justify-content-center content">
+                21.05.2026
+            </div>
+            <div class="text-center pt-3">
+                <span class="badge rounded-pill bg-secondary">OOP</span>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <div class="col-7">
+                    <i class="content">
+                        "New ideas go through stages of acceptance, both from within and without. From within, the sequence moves from “barely seeing” a pattern several times, then noting it but not perceiving its “cosmic” signiﬁcance, then using it operationally in several areas, then comes a “grand rotation” in which the pattern becomes the center of a new way of thinking, and ﬁnally, it turns into the same kind of inﬂexible religion that it originally broke away from." 
+                    </i>
+                    <p class="content">
+                        <br><br>
+                        Alan Kay is credited as the father of Object Oriented Programming. Through OOP, Kay ushered in a new era of composability and scalability in computing. The process was by no means a stroke of ingenuity or divine elucidation, but rather similarly insane solutions to recurring challenges that Kay observed throughout his career which crystallized into objects. For indeed, insanity and ingenuity have always been two sides of the same coin.
+                        <br>
+                    </p>
+                    <p class="content">
+                        As a computer scientist and biologist, Kay viewed computing in a rather natural way. No longer was the central concern of computation about representing and organising instructions, but the evolution of programs and computers. Objects were the "new idea" or "grand rotation" by which to view computing. This article explores the moments of insanity leading up to the formal definition of objects and the true vision of Alan Kay for Object Oriented Programming.
+                        <br><br>
+                    </p>
+                    <h4 class="content">First instance - Burroughs Mainframe</h4>
+                    <p class="content">
+                        <br>
+                        Alan Kay was drafted into the US Airforce in 1961 where he worked as a programmer. Throughout the early 60s, Kay noted flickers of abstraction-type problem solving in different situations. It was these faint moments which later became formative in shaping the ideology of OOP.
+                        <br><br>
+                        The first flicker came in the form of software. At the time, there was not yet a standard way to transfer and read files across different Burroughs mainframes. Kay observed that another engineer had devised an elegant solution by dividing the task into three parts. The base, or third, part contained the actual files, the second part contained procedures which told the Burroughs computer how to copy and transfer the file, and the first part stored the sequence of second layer procedures to call, which when executed, would correctly transfer all the files in the third layer. Each part of the solution is stand-alone, or what we know as encapsulation today, and does not need to have knowledge on the existence or functionality of the other parts, a precursor to abstraction.
+                        <br><br>
+                        The second flicker came in the form of hardware. After the Airforce upgraded from the Burroughs 220 to B5000, Kay noted the huge increase in the translation speed from high level programming languages to low level representations that the machine can understand. To achieve this, the B5000 was one of the first machines to implement the idea of virtual memory and automatic calling and switching of processes. In other words, it is the precursor to the operating systems of today. While this modular hardware design also hints at the advantages of encapsulation and abstraction, Kay did not have the perspective necessary at that time to understand its significance.
+                        <br><br>
+                    </p>
+                    <h4 class="content">Second instance - Simula and Sketchpad</h4>
+                    <p class="content">
+                        After completing his undergraduate in Mathematics and Molecular Biology in 1966, Alan Kay moved into his graduate studies at the University of Utah. His supervisor, Dave Evans, was not a great fan of the academic institution, instead preferring to assign students to real world problems. Thus, Alan Kay was placed to work on Simula and Sketchpad.
+                        <br><br>
+                        Sketchpad was an early attempt at human-computer interaction through a pictorial interface - a pad upon which you can sketch - the predecessor to computer graphics. Users would sketch a picture on a pad and that would become a master image. Then, modifications or effects could be applied to this image through external commands. Simula was the programming language designed specifically for controlling Sketchpad images. As different images could be edited via external commands and interact with each other, Kay became exposed to the idea of images as encapsulated objects and the message passing between them to form cohesive programs.
+                        <br><br>
+                    <h4 class="content">Objects as cells of infinite evolvability</h4>
+                    <p class="content">
+                        The breakthrough came when Kay applied his undergraduate learnings to solve the issues he witnessed during his time in the Airforce. Whether it is designing a file transfer protocol, or a better operating system, the underlying problem is the same - how to decompose large problems into smaller ones.
+                        <br><br>
+                        In the case of the file transfer protocol, the problem as decomposed as follows: files, then protocols which interprets and executes on these files, and finally user protocols which allows selection of the lower level file protocols. This illustrates the kind of subroutine decomposition was the norm in the early sixties. However, the issue with this method of decomposition is that each step is highly dependent on the next, if one link fails the chain would collapse. Creating unmanageable complexities as software grows larger.
+                        <br><br>
+                        Given his mathematics and biology background, Kay was enamoured with the beauty of simplicity:
+                        <br><br>
+                        <i class="content">
+                            "My math major had centered on abstract algebras with their few operations generally applying to many structures. My biology minor had focused on both cell metabolism and larger scale morphogenesis with its notions of simple mechanisms controlling complex processes and one kind of building block able to differentiate into all needed building blocks…
+                            <br><br>
+                            … The basic principal of recursive design is to make the parts have the same power as the whole."
+                        </i>
+                        <br><br>
+                        The idea of <i>recursive design</i> gave birth to the foundation of OOP. Kay viewed objects as independently capable - no matter to what extent an object is decomposed into a simpler one, the simplest of objects are all capable of executing its own tasks. Coincidentally, Kay conceptualized this definition at a time when computers were just becoming distributed and connected by the first iteration of the web - the ARPAnet. At the intersection of all these technologies, Kay thought of objects as something with infinite scalability and evolvability. Objects could be decomposed into processes, functions and primitives, but also composed into full computers and networks.
+                        <br><br>
+                        <i>
+                            "At Utah sometime after Nov 66 when, influenced by Sketchpad, Simula, the design for the ARPAnet, the Burroughs B5000, and my background in Biology and Mathematics, I thought of an architecture for programming. It was probably in 1967 when someone asked me what I was doing, and I said, it's object-oriented programming."
+                            <br><br>
+                        </i>
+                    </p>
+                    <h4 class="content">The true vision of Objects</h4>
+                    <p class="content">
+                        Object-oriented programming has since become one of the most prominent language design paradigms. It has spawned popular languages like Python, Java, Javascript and more. In turn, these languages form the base of the internet, AI, and operating systems. Yet, as the world started making a religion out of OOP, Alan Kay saw this as a fate most vile.
+                        <br><br>
+                        At the 1997 OOPSLA conference, Alan Kay gave a speech called <a href="https://www.youtube.com/watch?v=oKg1hTOQXoY"><i>The computer revolution hasn't happened yet</i></a>. In this iconic speech, Kay denounced the direction of computer science. He denounced the foundations of object being used by large corporations to achieve very specific use cases, spreading the doctrine of OOP until it is no different from COBOL or FORTRAN of the previous era. The original vision, the vision of human-machine augmentation, has been lost.
+                        <br><br>
+                        <i>
+                            "The larger metaphor of human-computer symbiosis helped the community avoid making a religion of their subgoals and kept them focused on the abstract holy grail of "augmentation.""
+
+                        </i>
+                        <br><br>
+                        Starting from Sketchpad and Simula, representing the graphical interface, Alan Kay composed various components until he invented the first version of the personal computer, the Dynabook. For Kay, the invention of the laptop was not only so that every human can own a powerful computational device on their person, but one of symbiotic augmentation.
+                        <br><br>
+                        Symbiosis is a phenomenon in biology where two individual organisms interact to derive benefits from each other. The benefit that Kay saw was augmentation. The augmentation that computers provide to humans is clear, scales of operation and computation at much higher speeds than the human mind can achieve. Yet what do humans provide to computers? Directions of evolution.
+                        <br><br>
+                        The decades after the conception of the ARPAnet saw intensive research into distributed computing and network protocols. Generations of researchers tried countless iterations of protocols until the internet as we know it today. Yet, what if computers are able select protocols themselves? They would be able evolve. This is the foundation of Artificial Intelligence.
+                        <br><br>
+                        The early, and arguably also modern, attempts to develop logic which allows computers to evolve themselves have yielded poor results. Early experiments like AM/EURISKO showed that evolutionary algorithms tend to fall into infinite loops, instead of producing forward steps like biological evolution. Human intervention were always necessary to guide the advancement of computers, to augment their capabilities.
+                        <br><br>
+                        Alan Kay's objects were never meant to create a religion out of program and language design. They were a promise to harmonise the natural and mechanical. A symbiosis to accelerate the evolution of both kinds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
